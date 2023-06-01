@@ -48,4 +48,8 @@ ctaImg.src = siteContent.images['cta-img'];
 
 const midImg = document.querySelector('#middle-img');
 midImg.src = siteContent.images['accent-img'];
-// console.log('project wired!')
+
+// FOOTER LINK
+const footerLink = document.querySelector('footer a');
+footerLink.textContent = siteContent.footer.copyright;
+footerLink.classList.add('bold');
