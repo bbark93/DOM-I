@@ -39,6 +39,13 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
+// IMAGES
 const logoImg = document.querySelector('#logo-img');
-console.log(logoImg);
+logoImg.src = siteContent.images['logo-img'];
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = siteContent.images['cta-img'];
+
+const midImg = document.querySelector('#middle-img');
+midImg.src = siteContent.images['accent-img'];
 // console.log('project wired!')
