@@ -61,9 +61,20 @@ contact.children[1].textContent = siteContent.contact['address'];
 contact.children[2].textContent = siteContent.contact['phone'];
 contact.children[3].textContent = siteContent.contact['email'];
 
-//TOP CONTENT
+// TOP CONTENT
 const topContent = document.querySelector('.top-content');
 topContent.children[0].children[0].textContent = siteContent['main-content']['features-h4'];
 topContent.children[0].children[1].textContent = siteContent['main-content']['features-content'];
 topContent.children[1].children[0].textContent = siteContent['main-content']['about-h4'];
 topContent.children[1].children[1].textContent = siteContent['main-content']['about-content'];
+
+// BOTTOM CONTENT
+const bottomContent = document.querySelector('.bottom-content');
+const h4sBottom = bottomContent.querySelectorAll('h4');
+h4sBottom[0].textContent = siteContent['main-content']['services-h4'];
+h4sBottom[1].textContent = siteContent['main-content']['product-h4'];
+h4sBottom[2].textContent = siteContent['main-content']['vision-h4'];
+const psBottom = bottomContent.querySelectorAll('p');
+psBottom[0].textContent = siteContent['main-content']['services-content'];
+psBottom[1].textContent = siteContent['main-content']['product-content'];
+psBottom[2].textContent = siteContent['main-content']['vision-content'];
