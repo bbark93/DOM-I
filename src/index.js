@@ -81,4 +81,12 @@ psBottom[2].textContent = siteContent['main-content']['vision-content'];
 
 // CTA
 document.querySelector('.cta .cta-text h1').textContent = siteContent.cta.h1;
-document.querySelector('.cta .cta-text button').textContent = siteContent.cta.button
+document.querySelector('.cta .cta-text button').textContent = siteContent.cta.button;
+
+// NAV LINKS
+const navLinks = document.querySelectorAll('header nav a');
+const navLinkTexts = Object.values(siteContent.nav);
+navLinks.forEach((link, i) => {
+  link.textContent = navLinkTexts[i];
+  link.classList.add('italic');
+});
